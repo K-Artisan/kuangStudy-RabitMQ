@@ -1,10 +1,13 @@
-[TOC]
+#  目录
 
+[TOC]
 
 
 # 课程地址
 
 视频：
+
+https://www.bilibili.com/video/BV1dX4y1V73G?p=1
 
 资源：
 
@@ -112,3 +115,112 @@ https://www.kuangstudy.com/course/detail/1323452886432944129
 ![1616853074167](images/KuangStudy-RabbitMQ/1616853074167.png)
 
 ![1616853260227](images/KuangStudy-RabbitMQ/1616853260227.png)
+
+
+
+# 基于消息中间件的分布式系统的架构
+
+![1616854043296](images/KuangStudy-RabbitMQ/1616854043296.png)
+
+![1616854073871](images/KuangStudy-RabbitMQ/1616854073871.png)
+
+![1616854211138](images/KuangStudy-RabbitMQ/1616854211138.png)
+
+![1616854360898](images/KuangStudy-RabbitMQ/1616854360898.png)
+
+10w并发量
+
+![1616854596941](images/KuangStudy-RabbitMQ/1616854596941.png)
+
+![1616854701935](images/KuangStudy-RabbitMQ/1616854701935.png)
+
+![1616854921122](images/KuangStudy-RabbitMQ/1616854921122.png)
+
+![1616855250026](images/KuangStudy-RabbitMQ/1616855250026.png)
+
+# 消息队列协议
+
+<img src="images/KuangStudy-RabbitMQ/1616855304730.png" alt="1616855304730" style="zoom:50%;" />
+
+什么是协议
+
+![1616855376084](images/KuangStudy-RabbitMQ/1616855376084.png)
+
+![1616856184504](images/KuangStudy-RabbitMQ/1616856184504.png)
+
+![1616856304669](images/KuangStudy-RabbitMQ/1616856304669.png)
+
+![1616856433656](images/KuangStudy-RabbitMQ/1616856433656.png)
+
+![1616857006778](images/KuangStudy-RabbitMQ/1616857006778.png)
+
+![1616857085203](images/KuangStudy-RabbitMQ/1616857085203.png)
+
+![1616857180117](images/KuangStudy-RabbitMQ/1616857180117.png)
+
+
+
+
+
+# 消息队列的持久化
+
+![1616857335220](images/KuangStudy-RabbitMQ/1616857335220.png)
+
+ ![1616857570808](images/KuangStudy-RabbitMQ/1616857570808.png)
+
+
+
+# 消息的分发策略
+
+![1616857726130](images/KuangStudy-RabbitMQ/1616857726130.png)
+
+![1616857872347](images/KuangStudy-RabbitMQ/1616857872347.png)
+
+![1616857859096](images/KuangStudy-RabbitMQ/1616857859096.png)
+
+![1616857933948](images/KuangStudy-RabbitMQ/1616857933948.png)
+
+![1616858027289](images/KuangStudy-RabbitMQ/1616858027289.png)
+
+# 消息队列高可用和高可靠
+
+<img src="images/KuangStudy-RabbitMQ/1616859219291.png" alt="1616859219291" style="zoom:50%;" />
+
+![1616859108876](images/KuangStudy-RabbitMQ/1616859108876.png)
+
+![1616859451683](images/KuangStudy-RabbitMQ/1616859451683.png)
+
+![1616859470100](images/KuangStudy-RabbitMQ/1616859470100.png)
+
+不存在消息副本
+
+![1616859536212](images/KuangStudy-RabbitMQ/1616859536212.png)
+
+存在消息副本，单写多读
+
+![1616859764430](images/KuangStudy-RabbitMQ/1616859764430.png)
+
+> 解释：和上面的区别不大，但是 他的写入可以往任意节点去写入
+
+![1616860108703](images/KuangStudy-RabbitMQ/1616860108703.png)
+
+![1616860282015](images/KuangStudy-RabbitMQ/1616860282015.png)
+
+> 小公司一般不会使用这种模式，成本比较大，至少需要6台服务器？
+
+
+
+反正终归三局话：
+
+- 要么消息共享
+- 要么消息同步
+- 要么元数据共享
+
+![1616860515370](images/KuangStudy-RabbitMQ/1616860515370.png)
+
+
+
+
+
+# 入门及安装
+
