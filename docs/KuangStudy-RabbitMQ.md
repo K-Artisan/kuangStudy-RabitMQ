@@ -514,6 +514,54 @@ CONTAINER ID   IMAGE    COMMAND        CREATED    STATUS       PORTS     NAMES
 docker run -di --name myrabitt -e RABBITMQ_DEFAULT_USER=admin  -e RABBITMQ_DEFAULT_PASS=admin ......
 ```
 
+查看RabbitMQ-Docker容器的插件列表和启用的插件：
+
+```shell
+[root@centos7 ~]# docker exec -it myrabitt /bin/bash
+root@4f795f5970b7:/# rabbitmq-plugins list
+Listing plugins with pattern ".*" ...
+ Configured: E = explicitly enabled; e = implicitly enabled
+ | Status: * = running on rabbit@4f795f5970b7
+ |/
+[  ] rabbitmq_amqp1_0                  3.8.14
+[  ] rabbitmq_auth_backend_cache       3.8.14
+[  ] rabbitmq_auth_backend_http        3.8.14
+[  ] rabbitmq_auth_backend_ldap        3.8.14
+[  ] rabbitmq_auth_backend_oauth2      3.8.14
+[  ] rabbitmq_auth_mechanism_ssl       3.8.14
+[  ] rabbitmq_consistent_hash_exchange 3.8.14
+[  ] rabbitmq_event_exchange           3.8.14
+[  ] rabbitmq_federation               3.8.14
+[  ] rabbitmq_federation_management    3.8.14
+[  ] rabbitmq_jms_topic_exchange       3.8.14
+[E*] rabbitmq_management               3.8.14
+[e*] rabbitmq_management_agent         3.8.14
+[  ] rabbitmq_mqtt                     3.8.14
+[  ] rabbitmq_peer_discovery_aws       3.8.14
+[  ] rabbitmq_peer_discovery_common    3.8.14
+[  ] rabbitmq_peer_discovery_consul    3.8.14
+[  ] rabbitmq_peer_discovery_etcd      3.8.14
+[  ] rabbitmq_peer_discovery_k8s       3.8.14
+[E*] rabbitmq_prometheus               3.8.14
+[  ] rabbitmq_random_exchange          3.8.14
+[  ] rabbitmq_recent_history_exchange  3.8.14
+[  ] rabbitmq_sharding                 3.8.14
+[  ] rabbitmq_shovel                   3.8.14
+[  ] rabbitmq_shovel_management        3.8.14
+[  ] rabbitmq_stomp                    3.8.14
+[  ] rabbitmq_top                      3.8.14
+[  ] rabbitmq_tracing                  3.8.14
+[  ] rabbitmq_trust_store              3.8.14
+[e*] rabbitmq_web_dispatch             3.8.14
+[  ] rabbitmq_web_mqtt                 3.8.14
+[  ] rabbitmq_web_mqtt_examples        3.8.14
+[  ] rabbitmq_web_stomp                3.8.14
+[  ] rabbitmq_web_stomp_examples       3.8.14
+root@4f795f5970b7:/# cat /etc/rabbitmq/enabled_plugins
+[rabbitmq_management,rabbitmq_prometheus].
+
+```
+
 
 
 
